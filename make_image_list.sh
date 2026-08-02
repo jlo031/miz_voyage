@@ -4,6 +4,12 @@
 TARGET_DIR="/g/data/jk72/jl0818/DATA/miz_voyage/Sentinel-1/L1"
 OUTPUT_FILE="./image_lists/S1_image_list.txt"
 
+OUTPUT_FILE_2025="./image_lists/S1_image_list_2025.txt"
+OUTPUT_FILE_2024="./image_lists/S1_image_list_2024.txt"
+OUTPUT_FILE_2023="./image_lists/S1_image_list_2023.txt"
+OUTPUT_FILE_2022="./image_lists/S1_image_list_2022.txt"
+
+
 # Clear the output file if it already exists
 > "$OUTPUT_FILE"
 
@@ -27,3 +33,15 @@ else
     echo "No .zip files found in $TARGET_DIR."
 
 fi
+
+> "$OUTPUT_FILE_2025"
+cat $OUTPUT_FILE | grep "_2025" >> $OUTPUT_FILE_2025
+
+> "$OUTPUT_FILE_2024"
+cat $OUTPUT_FILE | grep "_2024" >> $OUTPUT_FILE_2024
+
+> "$OUTPUT_FILE_2023"
+cat $OUTPUT_FILE | grep "_2023" >> $OUTPUT_FILE_2023
+
+> "$OUTPUT_FILE_2022"
+cat $OUTPUT_FILE | grep "_2022" >> $OUTPUT_FILE_2022
