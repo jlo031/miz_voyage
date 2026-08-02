@@ -1,0 +1,15 @@
+{
+    "WORK_DIR": "/home/581/jl0818/work/miz_voyage",
+    "DATA_DIR": "/g/data/jk72/jl0818/DATA/miz_voyage",
+    "sub_dirs": {
+        "S1": "Sentinel-1",
+        "S1_subdirs": {
+            "L1": "L1",
+            "FEAT": "features",
+            "GEO": "geocoded",
+            "RGB": "RGB",
+            "TRAIN": "training"
+        },
+        "osisaf": "OSISAF"
+    }
+}
