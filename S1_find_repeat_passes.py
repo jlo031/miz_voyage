@@ -31,8 +31,8 @@ lat = -63.25
 lon = 111.0
 
 # Provide timing
-start_date   = '2023-08-01'
-end_date     = '2023-10-31'
+start_date   = '2022-08-01'
+end_date     = '2022-10-31'
 start_time   = '00:00:01'
 end_time     = '23:59:59'
 

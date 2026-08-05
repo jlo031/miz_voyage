@@ -1,6 +1,6 @@
 #!/bin/bash
 
-img_list="image_lists/S1_image_list_2023.txt"
+img_list="image_lists/S1_image_list_2022.txt"
 n_img=`cat ${img_list} | wc -l`
 counter=0
 
